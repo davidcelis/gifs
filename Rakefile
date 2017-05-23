@@ -15,9 +15,6 @@ task :build do
     end
   end
 
-  # Sort the files
-  files.sort! { |a,b| a[:path] <=> b[:path] }
-
   FileUtils.mkdir_p('_data') unless File.directory?('_data')
   FileUtils.mkdir_p('_includes') unless File.directory?('_includes')
   File.open('_data/static_files.yml', 'w') { |f| f.write(YAML.dump(files)) }
@@ -25,7 +22,7 @@ task :build do
 end
 
 def dir_blacklist
-  ['css', 'js', 'images', 'vendor']
+  ['bin', 'css', 'js', 'images', 'vendor']
 end
 
 def useless?(f)

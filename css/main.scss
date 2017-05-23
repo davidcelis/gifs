@@ -138,6 +138,10 @@ body{
   // Style the list of categories
 
   > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
     margin: 0; padding: 0;
     list-style: none;
     // experimental column support
@@ -161,6 +165,7 @@ body{
 
     // Style individual category cards
     > li {
+      align-items: flex-start;
       background-color: $navy_bg;
       border-radius: 10px;
       padding: 6px 10px;
@@ -172,6 +177,7 @@ body{
       -webkit-column-break-inside: avoid;
       column-break-inside: avoid;
       color: $green;
+      width: 30%;
 
       &.hidden {
         display: none;
