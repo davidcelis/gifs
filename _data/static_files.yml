@@ -49,6 +49,15 @@
   - gif
   - prince
   - yikes
+- title: tyrion-lannister.gif
+  category: awkward
+  path: awkward/tyrion-lannister.gif
+  modified_time: 1495575501
+  tags:
+  - awkward
+  - gif
+  - lannister
+  - tyrion
 - title: cersei-sipping-wine-sept-of-baelor.gif
   category: badass
   path: badass/cersei-sipping-wine-sept-of-baelor.gif
@@ -456,15 +465,6 @@
   - jim
   - 'no'
   - office
-- title: tyrion-lannister.gif
-  category: 'no'
-  path: no/tyrion-lannister.gif
-  modified_time: 1495575501
-  tags:
-  - gif
-  - lannister
-  - 'no'
-  - tyrion
 - title: bill-hader.gif
   category: popcorn
   path: popcorn/bill-hader.gif
