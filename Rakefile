@@ -10,7 +10,7 @@ task :build do
   files = []
 
   dirs.each do |dir|
-    Dir.glob("#{dir}/**/*.{gif,jpg,jpeg,png}") do |gif|
+    Dir.glob("#{dir}/**/*.{gif,jpg,jpeg,png}").sort.each do |gif|
       files << liquid_info_for_file(gif)
     end
   end
@@ -33,7 +33,7 @@ def useless?(f)
 end
 
 def get_gif_dirs
-  Dir.foreach('.').sort.map { |f| f unless useless?(f) }.compact
+  Dir.foreach('.').map { |f| f unless useless?(f) }.compact.sort
 end
 
 def liquid_info_for_file(path)
