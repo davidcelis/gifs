@@ -33,7 +33,7 @@ def useless?(f)
 end
 
 def get_gif_dirs
-  Dir.foreach('.').map { |f| f unless useless?(f) }.compact
+  Dir.foreach('.').sort.map { |f| f unless useless?(f) }.compact
 end
 
 def liquid_info_for_file(path)
